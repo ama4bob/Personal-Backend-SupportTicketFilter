@@ -32,6 +32,6 @@ TODO:
 - Optimize for loop in app.filterPOST function
 - Implement server control UI for adding or removing ignored words
 - Implement text saving and loading for ignored words
-- Implement phrase search with phrase hierarchy
+- Implement phrase ignore with phrase hierarchy
 - Allow connection to AWS to retrieve JSON files
-- Validate if file can be opened
+- Validate if attached files can be opened
