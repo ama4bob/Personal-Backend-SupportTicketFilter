@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
-from pathlib import Path
-from utils import FilterUtil, ValidateUtil
-import json
+from utils.FilterUtil import FilterUtil
+from utils.ValidateUtil import ValidateUtil
 
 app = Flask(__name__)
 
@@ -21,10 +20,11 @@ def filterPOST():
     content = request.json
     # TODO: This could be optimized for faster speed and memory
     for parsedContent in content[:]:
-        if ValidateUtil.validateTicket(parsedContent):
+        if ValidateUtil.validateTicket(object, parsedContent):
             content.remove(parsedContent)
         else:
-            FilterUtil.filterDescription(parsedContent["msg"])
+            if "msg" in parsedContent:
+                parsedContent["msg"] = FilterUtil.filterDescription(object, parsedContent["msg"])
 
     return content
 
