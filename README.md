@@ -1,7 +1,7 @@
 # Butler-APIEndpoint
 
 Description:
-This is an API endpoint that is used to remove JSON subsets (retrieved by the client through a POST) that do not conform to the ticketing rules, and also will filter the 'desc' part of the ticket by removing and words present in the ignore list. The API will return the mutated JSON back to the client.
+This is an API endpoint that is used to remove JSON subsets (retrieved by the client through a POST) that do not conform to the ticketing rules, and also will filter the 'desc' part of the ticket by removing any words present in the ignore list. The API will return the mutated JSON back to the client.
 
 The helper functions that are used (stored in the utils file) is tested through unit testing. Postman is used to conduct
 UAT testing through different cases:
