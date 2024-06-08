@@ -29,9 +29,10 @@ How to use:
 
 TODO:
 - Implement Rabin-Karp algorithm in FilterUtil.filterIgnoreList function
-- Optimize for loop in app.filterPOST function
+- Optimize for loop in app filterPOST function
 - Implement server control UI for adding or removing ignored words
 - Implement text saving and loading for ignored words
 - Implement phrase ignore with phrase hierarchy
 - Allow connection to AWS to retrieve JSON files
 - Validate if attached files can be opened
+- Use chatgpt API to see if ticket makes sense in English 
