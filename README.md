@@ -35,4 +35,5 @@ TODO:
 - Implement phrase ignore with phrase hierarchy
 - Allow connection to AWS to retrieve JSON files
 - Validate if attached files can be opened
-- Use chatgpt API to see if ticket makes sense in English 
+- Use chatgpt API to see if ticket makes sense in English
+- Merge successive tickets if the time between tickets is not more than 20 min from the same number
