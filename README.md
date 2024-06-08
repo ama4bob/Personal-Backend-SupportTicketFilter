@@ -37,3 +37,4 @@ TODO:
 - Validate if attached files can be opened
 - Use chatgpt API to see if ticket makes sense in English
 - Merge successive tickets if the time between tickets is not more than 20 min from the same number
+- Implement a lexicon to remove any words that are wrong
